@@ -5,7 +5,7 @@ const _interface = readline.createInterface(
      output : process.stdout
 })
 
-const function_123 = () => {
+const _function = () => {
     _interface.question("Enter number for checking:",
         (answer) => {
             if (!isNaN(answer)){
@@ -15,20 +15,20 @@ const function_123 = () => {
                 else if (answer%2==0){
                      console.log(`Enetered number ${answer} is even`)
                      console.log("Enter 0 for exit")
-                     function_123()
+                     _function()
                     }
                 else{
                     console.log(`Enetered number ${answer} is odd`)
                     console.log("Enter 0 for exit")
-                    function_123()
+                    _function()
                 }
             }
             else{
                 console.log("Please enter number only as input")
-                function_123()
+                _function()
             }
         }
     )
 }
 
-function_123()
+_function()
